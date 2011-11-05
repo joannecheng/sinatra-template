@@ -1,2 +1,3 @@
-'''bundle
-bundle exec rackup'''
+```bundle
+
+bundle exec rackup```
