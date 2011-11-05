@@ -7,7 +7,7 @@ module AssetHelpers
   end
 end
 
-class EducationStats < Sinatra::Base
+class App < Sinatra::Base
   set :root, File.expand_path('../', __FILE__)
   set :sprockets, Sprockets::Environment.new(root)
   set :precompile, [/\w+\.(?!js|css).+/, /applcation.(css|js)$/]
