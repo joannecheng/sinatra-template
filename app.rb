@@ -1,11 +1,4 @@
-require 'bundler'
-Bundler.require
-
-module AssetHelpers
-  def asset_path(source)
-    "/assets/" + settings.sprockets.find_asset(source).digest_path
-  end
-end
+require File.expand_path('../config/app', __FILE__)
 
 class App < Sinatra::Base
   set :root, File.expand_path('../', __FILE__)
