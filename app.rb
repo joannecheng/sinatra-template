@@ -7,6 +7,7 @@ class App < Sinatra::Base
   set :precomile, [/.*/]
   set :assets_prefix, 'assets'
   set :assets_path, File.join(root, 'public', assets_prefix)
+  set :assets_path, File.join(root, 'vendor', assets_prefix)
 
   configure do
     sprockets.append_path(File.join(root, 'assets', 'javascripts'))
