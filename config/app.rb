@@ -6,6 +6,7 @@ Bundler.require
 module AssetHelpers
   def asset_path(source)
     "/assets/" + settings.sprockets.find_asset(source).digest_path
+    "/vendor/assets/" + settings.sprockets.find_asset(source).digest_path
   end
 end
 
